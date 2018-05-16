@@ -447,14 +447,14 @@ void __cdecl InitSonicWeldInfo_mod()
 	SonicWeldInfo[33].VertIndexes = Sonic_RightHandIndices;
 	SonicWeldInfo[33].ModelB = v4;
 	SonicWeldInfo[33].VertexPairCount = (uint8_t)(LengthOfArray(Sonic_RightHandIndices) / 2);
-	SonicWeldInfo[33].WeldType = 2;
+	SonicWeldInfo[33].WeldType = 2;/*
 	SonicWeldInfo[34].BaseModel = SONIC_OBJECTS[22];
 	SonicWeldInfo[34].ModelA = SONIC_OBJECTS[31];
 	SonicWeldInfo[34].ModelB = SONIC_OBJECTS[32];
 	SonicWeldInfo[34].anonymous_5 = 0;
 	SonicWeldInfo[34].VertexBuffer = 0;
 	SonicWeldInfo[34].VertexPairCount = 4;
-	SonicWeldInfo[34].VertIndexes = Sonic_RightHandIndices;
+	SonicWeldInfo[34].VertIndexes = Sonic_LeftHandIndices;
 	SonicWeldInfo[34].WeldType = 2;
 	SonicWeldInfo[35].BaseModel = SONIC_OBJECTS[22];
 	SonicWeldInfo[35].ModelA = SONIC_OBJECTS[26];
@@ -470,5 +470,5 @@ void __cdecl InitSonicWeldInfo_mod()
 	SonicWeldInfo[35].VertexPairCount = 4;
 	SonicWeldInfo[35].ModelB = v5;
 	SonicWeldInfo[35].WeldType = 2;
-	SonicWeldInfo[36].VertIndexes = 0;
+	SonicWeldInfo[36].VertIndexes = 0;*/
 }
