@@ -120,11 +120,11 @@ uint16_t Sonic_RightShoeIndices[] = {
 
 uint16_t Sonic_RightLSShoeIndices[] = {
 	0, 1,
-	25, 11,
+	17, 11,
 	15, 7,
 	14, 6,
-	24, 12,
-	1, 5,
+	16, 12,
+	2, 5,
 };
 
 uint16_t Sonic_RightHandIndices[] = {
