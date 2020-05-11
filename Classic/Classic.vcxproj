@@ -157,6 +157,7 @@
     <ClInclude Include="include\SADXModLoader.h" />
     <ClInclude Include="include\SADXStructs.h" />
     <ClInclude Include="include\SADXVariables.h" />
+    <ClInclude Include="Miles.h" />
     <ClInclude Include="Sonic.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="SuperSonic.h" />
