@@ -21,7 +21,7 @@ typedef struct Rotation {
 struct ObjectMaster;
 typedef void(__cdecl *ObjectFuncPtr)(ObjectMaster *);
 typedef void(__cdecl *VBufferFuncPtr)(NJS_MESHSET_SADX*, NJS_POINT3*, NJS_VECTOR*);
-
+typedef const Float* NJS_MATRIX_CONST_PTR;
 
 // TODO: Grab actual structs from disassembly.
 typedef void ABC_TXT_struct;
@@ -1569,6 +1569,63 @@ struct TitleCardTextureList
 {
 	int Count;
 	TitleCardTexture *List;
+};
+
+struct CharBossData
+{
+	int BossID;
+	ObjectMaster *Player1;
+	ObjectMaster *BossCharacter;
+	int anonymous_3;
+	void(__cdecl *DeleteFunc)();
+};
+
+struct BlackMarketItemAttributes
+{
+	int PurchasePrice;
+	int SalePrice;
+	__int16 RequiredEmblems;
+	__int16 Name;
+	__int16 Description;
+	__int16 anonymous_7;
+};
+
+struct BlackMarketItemAttributesList
+{
+	BlackMarketItemAttributes *Items;
+	int Count;
+};
+
+struct TutorialScreenData
+{
+	__int16 BoxX;
+	__int16 BoxY;
+	__int16 anonymous_2;
+	__int16 BoxScaleX;
+	__int16 BoxScaleY;
+	__int16 anonymous_3;
+	void *Pointer1;
+	void *Pointer2;
+};
+
+struct TutorialScreenHead
+{
+	unsigned __int16 arrayLength;
+	unsigned __int16 pageCount;
+	TutorialScreenData *data;
+	NJS_TEXLIST *texlistA;
+	NJS_TEXLIST *texlistB;
+	const char *pvmA;
+	const char *pvmB;
+};
+
+struct DebugStringInfo
+{
+	__int16 column;
+	__int16 row;
+	__int16 fontsize;
+	int color;
+	const char *text;
 };
 
 #pragma pack(pop)
