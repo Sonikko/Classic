@@ -497,13 +497,22 @@ uint16_t Tails_LegIndices_DC[] = {
 	5, 7,
 };
 
-uint16_t Tails_ShoeIndices_DC[] = {
-	2, 3,
-	12, 8,
+uint16_t Tails_LeftShoeIndices_DC[] = {
+	2, 11,
+	3, 7,
+	17, 9,
+	1, 10,
+	0, 0,
+	12, 1,
+};
+
+uint16_t Tails_RightShoeIndices_DC[] = {
+	3, 11,
+	10, 2,
+	12, 13,
 	0, 1,
-	1, 0,
-	17, 13,
-	3, 2,
+	1, 5,
+	17, 12,
 };
 
 uint16_t Tails_HandIndices_DC[] = {
@@ -590,17 +599,17 @@ void __cdecl InitTailsWeldInfo_mod()
 	TailsWeldInfo[8].BaseModel = *MILES_OBJECTS;
 	TailsWeldInfo[8].ModelA = MILES_OBJECTS[32];
 	TailsWeldInfo[8].ModelB = MILES_OBJECTS[33];
-	TailsWeldInfo[8].VertexPairCount = (uint8_t)(LengthOfArray(Tails_ShoeIndices_DC) / 2);
+	TailsWeldInfo[8].VertexPairCount = (uint8_t)(LengthOfArray(Tails_LeftShoeIndices_DC) / 2);
 	TailsWeldInfo[8].WeldType = 2;
 	TailsWeldInfo[8].anonymous_5 = 0;
 	TailsWeldInfo[8].VertexBuffer = 0;
-	TailsWeldInfo[8].VertIndexes = Tails_ShoeIndices_DC;
+	TailsWeldInfo[8].VertIndexes = Tails_LeftShoeIndices_DC;
 	TailsWeldInfo[9].BaseModel = *MILES_OBJECTS;
 	TailsWeldInfo[9].ModelA = MILES_OBJECTS[34];
 	v1 = MILES_OBJECTS[35];
-	TailsWeldInfo[9].VertIndexes = Tails_ShoeIndices_DC;
+	TailsWeldInfo[9].VertIndexes = Tails_RightShoeIndices_DC;
 	TailsWeldInfo[9].ModelB = v1;
-	TailsWeldInfo[9].VertexPairCount = (uint8_t)(LengthOfArray(Tails_ShoeIndices_DC) / 2);
+	TailsWeldInfo[9].VertexPairCount = (uint8_t)(LengthOfArray(Tails_RightShoeIndices_DC) / 2);
 	TailsWeldInfo[9].WeldType = 2;
 	TailsWeldInfo[9].anonymous_5 = 0;
 	TailsWeldInfo[9].VertexBuffer = 0;
@@ -688,19 +697,19 @@ void __cdecl InitTailsWeldInfo_mod()
 	TailsWeldInfo[20].BaseModel = MILES_OBJECTS[1];
 	TailsWeldInfo[20].ModelA = MILES_OBJECTS[52];
 	TailsWeldInfo[20].ModelB = MILES_OBJECTS[53];
-	TailsWeldInfo[20].VertexPairCount = (uint8_t)(LengthOfArray(Tails_ShoeIndices_DC) / 2);
+	TailsWeldInfo[20].VertexPairCount = (uint8_t)(LengthOfArray(Tails_LeftShoeIndices_DC) / 2);
 	TailsWeldInfo[20].WeldType = 2;
 	TailsWeldInfo[20].anonymous_5 = 0;
 	TailsWeldInfo[20].VertexBuffer = 0;
-	TailsWeldInfo[20].VertIndexes = Tails_ShoeIndices_DC;
+	TailsWeldInfo[20].VertIndexes = Tails_LeftShoeIndices_DC;
 	TailsWeldInfo[21].BaseModel = MILES_OBJECTS[1];
 	TailsWeldInfo[21].ModelA = MILES_OBJECTS[54];
 	TailsWeldInfo[21].ModelB = MILES_OBJECTS[55];
-	TailsWeldInfo[21].VertexPairCount = (uint8_t)(LengthOfArray(Tails_ShoeIndices_DC) / 2);
+	TailsWeldInfo[21].VertexPairCount = (uint8_t)(LengthOfArray(Tails_RightShoeIndices_DC) / 2);
 	TailsWeldInfo[21].WeldType = 2;
 	TailsWeldInfo[21].anonymous_5 = 0;
 	TailsWeldInfo[21].VertexBuffer = 0;
-	TailsWeldInfo[21].VertIndexes = Tails_ShoeIndices_DC;
+	TailsWeldInfo[21].VertIndexes = Tails_RightShoeIndices_DC;
 	TailsWeldInfo[22].BaseModel = MILES_OBJECTS[1];
 	TailsWeldInfo[22].ModelA = MILES_OBJECTS[56];
 	TailsWeldInfo[22].ModelB = MILES_OBJECTS[57];
